@@ -11,9 +11,10 @@ const search = async (req, res, next) => {
 
 
 
+import puppeteer from "puppeteer";
+
 const getLinks = async (movieName) => {
 
-    const puppeteer = require("puppeteer");
 
     movieName = movieName.split(" ");
 
@@ -122,4 +123,4 @@ const getLinks = async (movieName) => {
 }
 
 
-module.exports = search;
+export { search };

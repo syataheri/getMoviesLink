@@ -1,8 +1,8 @@
-const express = require("express");
+import express from "express";
 
-const app = express();
+const app = express("express");
 
-const search = require("./controller/search");
+import search from "./controller/search.js";
 
 app.set("view engine", "ejs");
 app.set("views", "views");
